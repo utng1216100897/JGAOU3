@@ -1,0 +1,14 @@
+CREATE TABLE public.die
+(
+    id integer NOT NULL DEFAULT nextval('die_id_seq'::regclass),
+    service character varying(50) COLLATE "default".pg_catalog,
+    enter_date character varying(50) COLLATE "default".pg_catalog,
+    die_date character varying(50) COLLATE "default".pg_catalog,
+    result character varying(50) COLLATE "default".pg_catalog,
+    age integer,
+    CONSTRAINT die_pkey PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
